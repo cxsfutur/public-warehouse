@@ -6,7 +6,7 @@ let res
     }
 
     document.getElementById("searchbtn").disabled=true;
-	document.getElementById("searchbtn").innerHTML='<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>'请稍候……;
+	document.getElementById("searchbtn").innerHTML='<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Please wait...';
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -17,14 +17,14 @@ let res
   .then(function(myJson) {
     res = myJson;
     document.getElementById("searchbtn").disabled=false;
-	document.getElementById("searchbtn").innerHTML='再来一次';
+	document.getElementById("searchbtn").innerHTML=' Shorten it';
     if(res.key!=="")
     document.getElementById("result").innerHTML=window.location.host+res.key;
     $('#exampleModal').modal('show')
-  }).catch(function(err){alert("未知错误，请重试！");
+  }).catch(function(err){alert("Unknow error. Please retry!");
   console.log(err);
   document.getElementById("searchbtn").disabled=false;
-	document.getElementById("searchbtn").innerHTML=' 再来一次';})
+	document.getElementById("searchbtn").innerHTML=' Shorten it';})
   }
   function copyurl (id, attr) {
     let target = null;
@@ -60,4 +60,12 @@ let res
         // remove temp target
         target.parentElement.removeChild(target);
     }
+  }
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+  console.log("https://github.com/xyTom/Url-Shorten-Worker/")
+  let notice="Notice: This service is for demonstration purposes only and the generated short links will automatically expire after 24 hours."
+  if(window.location.host=="lnks.eu.org"){
+    document.getElementById("notice").innerHTML=notice
   }

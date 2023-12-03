@@ -2,8 +2,8 @@ $(function() {
 	var c = new Coder("style-text");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*hi,我是热河Jehol, 应用开发一枚</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*同时兼任国家n++级弹钢筋吉他手</div>",600);
+	c.load("<div class='bef_comment writecode'>&nbsp;*hi,我是豆荚, 个人开发者一枚</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*同时也是一名普普通通的站长</div>",600);
 	c.load("<div class='bef_comment writecode'>&nbsp;*让我们开始吧...</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
@@ -18,10 +18,10 @@ $(function() {
 	c.load("<div class='bef_comment writecode'>&nbsp;*那么让我们来做一些改变</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='code writecode'><span class='bef_selector'>html</span> {</div>");
-	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>background</span>: <span class='bef_value'>rgb(63, 82, 99)</span>;</div>");
+	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>background</span>: <span class='bef_value'>rgb(249,236,195)</span>;</div>");
 	c.setClass("html", [{
 		"name": "background",
-		"val": "rgb(63, 82, 99)"
+		"val": "rgb(249,236,195)"
 	}]);
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
@@ -171,32 +171,22 @@ $(function() {
 	
 	var w = new Coder("md");
 	w.load("<h1 class='writecode'>关于我</h1>");
-	w.load("<p><div class='writecode'>Jehol</div>");
-	w.load("<div class='writecode'>应用开发工程师</div>");
+	w.load("<p><div class='writecode'>豆荚</div>");
+	w.load("<div class='writecode'>个人开发者</div>");
 	w.load("<h1 class='writecode'>联系我</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'>邮箱:1422647137@qq.com</li>");
-	w.load("<li class='writecode'>主页:<a href='http://www.rehe.tech' target='_blank'>Jehol's Site</a></li>");
+	w.load("<li class='writecode'>邮箱:name@mixao.cn</li>");
+	w.load("<li class='writecode'>主页:<a href='http://www.mixao.cn' target='_blank'>豆荚の小站</a></li>");
 	w.load("<h1 class='writecode'>技能</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'>熟练Java语言,熟练JVM及GC相关原理等</li>");
-	w.load("<li class='writecode'>熟练主流Java Web 开发, 熟练SpringCloud、SpringBoot、Mybatis(Plus)等常用生态框架</li>");
-	w.load("<li class='writecode'>熟练MySQL、Redis、PgSQL、StarRocks等数据库</li>");
-	w.load("<li class='writecode'>熟练Linux常用命令、Python语言使用</li>");
-	w.load("<li class='writecode'>熟练版本控制工具 Git 和项目管理工具 Maven</li>");
-	w.load("<li class='writecode'>熟练Dubbo、ZooKeeper、MQ、Nginx等组件原理</li>");
-	w.load("<li class='writecode'>掌握计算机网络协议与操作系统等</li>");
-	w.load("<li class='writecode'>掌握Hadoop、Spark生态基本原理,如Hive,HDFS,MapReduce等</li>");
+	w.load("<li class='writecode'>熟练使用各种科学上网工具🤔</li>");
 	w.load("<li class='writecode'>掌握前端HTML、CSS、JS等基本使用</li>");
-	w.load("<li class='writecode'>对Sqoop,Hue,Impala,DataWorks,MaxCompute等大数据工具有一定的使用经验</li>");
+	w.load("<li class='writecode'>熟练MySQL、Redis等数据库</li>");
+	w.load("<li class='writecode'>熟练Linux常用命令使用</li>");
 	w.load("</ul>");
 	w.load("<h1 class='writecode'>其他</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'><a href='http://www.rehe.tech' target='_blank'>待补充</a></li>");
-	// w.load("<li class='writecode'><a href='http://rehe.tech' target='_blank'>http://rehe.tech</a></li>");
-	// w.load("<li class='writecode'><a href='http://rehe.tech' target='_blank'>http://rehe.tech</a></li>");
-	// w.load("<li class='writecode'><a href='http://rehe.tech' target='_blank'>http://rehe.tech</a></li>");
-	// w.load("<li class='writecode'><a href='http://rehe.tech' target='_blank'>http://rehe.tech</a></li>");
+	w.load("<li class='writecode'><a href='http://www.mixao.cn' target='_blank'>待补充</a></li>");
 	w.load("</ul>");
 	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*左面的简历看起来不是太令人满意，让我们先给他来点动态渲染</div>");
@@ -265,8 +255,8 @@ $(function() {
 	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*这样基本上就差不多了</div>");
 	c.load("<div class='comment writecode'>&nbsp;*");
-	c.load("<div class='comment writecode'>&nbsp;*微信:saphrena</div>");
-	c.load("<div class='comment writecode'>&nbsp;*mobile:13165969581</div>");
+	c.load("<div class='comment writecode'>&nbsp;*邮箱:name@mixao.cn</div>");
+	c.load("<div class='comment writecode'>&nbsp;*门前扫尽六朝雪，孤剑难守赤色天</div>");
 	c.load("<div class='comment writecode'>&nbsp;*最后非常感谢您愿意花3分钟看完我的简历！</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
 

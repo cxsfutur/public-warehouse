@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>home page</title>
+		<script src="me/jquery.min.js"></script>
+		<script src="me/index.js"></script>
+		<link rel="stylesheet" href="me/index.css" />
+
+        <!-- 调用js -->
+<script src="layer/3.1.1/layer.js"></script>
+<script>
+    // 禁止右键功能
+        window.oncontextmenu = function () {
+            return false;
+        }
+            /*禁用F12*/ 
+       document.onkeydown = function(event){
+            event = event || window.event; // 处理兼容性，兼容不同浏览器的事件对象
+            if(event.keyCode === 123 || (event.ctrlKey && event.keyCode === 83) || (event.ctrlKey && event.keyCode === 65)|| (event.metaKey && (isA = event.key === 'a' || event.key === 's'))) {
+                layer.msg("该快捷键被禁用了奥😟😟😟");
+                event.keyCode=0;
+                event.returnValue=false;
+                event.preventDefault(); // 阻止默认事件行为
+                event.stopPropagation(); // 阻止事件冒泡
+                return false;
+            }
+            if ((event.ctrlKey && event.keyCode === 67) || (event.metaKey && event.key === 'c')){
+                 layer.msg('复制请保留原文链接奥🤪🤪🤪');
+            }
+
+        } 
+        
+    window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 500) {
+            $('.wenan').css({
+                'color': '#707070'
+            });
+            $('.alogo').css({
+                'color': '#707070'
+            });
+        }
+
+        if (scrollTop < 500) {
+            $('.wenan').css({
+                'color': '#fff'
+            });
+            $('.alogo').css({
+                'color': '#fff'
+            });
+        }
+    }
+
+</script>
+
+
+
+	</head>
+	<body>
+		<div id="content">
+			<pre id="style-text"></pre>
+			<pre id="work-text"></pre>
+		</div>
+	</body>
+</html>
